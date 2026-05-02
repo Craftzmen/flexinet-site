@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/layout/section-wrapper";
-import { Signal, Globe, Wifi, Shield } from "lucide-react";
 
 const partners = [
-  { name: "Kinetic", icon: Signal },
-  { name: "EarthLink", icon: Globe },
-  { name: "Frontier", icon: Wifi },
-  { name: "Optimum", icon: Shield },
-  { name: "AT&T", icon: Globe },
-  { name: "HughesNet", icon: Signal },
+  { name: "Kinetic", logo: "https://www.google.com/s2/favicons?domain=windstream.com&sz=256" },
+  { name: "EarthLink", logo: "https://www.google.com/s2/favicons?domain=earthlink.net&sz=256" },
+  { name: "Frontier", logo: "https://logo.uplead.com/frontier.com" },
+  { name: "Optimum", logo: "https://logo.uplead.com/optimum.com" },
+  { name: "AT&T", logo: "https://logo.uplead.com/att.com" },
+  { name: "HughesNet", logo: "https://logo.uplead.com/hughesnet.com" },
+  { name: "Verizon", logo: "https://logo.uplead.com/verizon.com" },
 ];
 
 export function InternetPartnersSection() {
@@ -41,17 +41,16 @@ export function InternetPartnersSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
-        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
+        className="grid grid-cols-3 gap-8"
       >
         {partners.map((partner) => {
-          const Icon = partner.icon;
           return (
             <div
               key={partner.name}
-              className="flex flex-col items-center gap-3 bg-surface-white rounded-sm p-6 hover:shadow-md transition-shadow duration-300"
+              className="flex flex-col items-center gap-6 bg-surface-white rounded-sm p-8 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-mist">
-                <Icon className="h-6 w-6 text-midnight-ink" />
+              <div className="flex h-28 w-28 items-center justify-center p-2">
+                <img src={partner.logo} alt={`${partner.name} logo`} className="w-24 h-24 object-contain" />
               </div>
               <span className="text-sm font-semibold text-midnight-ink">{partner.name}</span>
             </div>
