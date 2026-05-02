@@ -1,0 +1,33 @@
+
+> flexinet@0.1.0 build
+> next build
+
+▲ Next.js 16.2.4 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/apple/Projects/flexinet/app/globals.css:105:1: Unclosed block
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:4697:22]
+    at error (node_modules/postcss/lib/parser.js:575:22) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:5864:26]
+    at unclosedBlock (node_modules/postcss/lib/parser.js:335:35) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:5651:39]
+    at endFile (node_modules/postcss/lib/parser.js:476:10) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:5774:14]
+    at parse (node_modules/postcss/lib/parse.js:11:12) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:5907:16]
+    at parser (node_modules/postcss/lib/lazy-result.js:165:16) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:6159:24]
+    at Processor.process (node_modules/postcss/lib/processor.js:53:14) [/Users/apple/Projects/flexinet/.next/build/chunks/node_modules_13sb.px._.js:6634:20]
+    at process (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0d-m0h0._.js:146:52]
+    at getValue (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:443:37]
+    at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:464:25]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+    at process (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0d-m0h0._.js:146:52])
+    at getValue (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:443:37])
+    at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11) [/Users/apple/Projects/flexinet/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:464:25])
