@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/layout/section-wrapper";
 
 const partners = [
-  { name: "Kinetic", logo: "https://www.google.com/s2/favicons?domain=windstream.com&sz=256" },
-  { name: "EarthLink", logo: "https://www.google.com/s2/favicons?domain=earthlink.net&sz=256" },
+  { name: "Kinetic", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJptsz9T2ctjwpIBvAsVrQv8C4oYY3CC16Q&s" },
+  { name: "EarthLink", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8vLIguYjRUwsMSH_n0VxOXNgGrVEFlr_bQ&s" },
   { name: "Frontier", logo: "https://logo.uplead.com/frontier.com" },
-  { name: "Optimum", logo: "https://logo.uplead.com/optimum.com" },
-  { name: "AT&T", logo: "https://logo.uplead.com/att.com" },
-  { name: "HughesNet", logo: "https://logo.uplead.com/hughesnet.com" },
-  { name: "Verizon", logo: "https://logo.uplead.com/verizon.com" },
+  { name: "Optimum", logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/Optimum_Rebranded_New_logo.webp " },
+  { name: "AT&T", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" },
+  { name: "Verizon", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Verizon_2024.svg/3840px-Verizon_2024.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" },
 ];
 
 export function InternetPartnersSection() {
@@ -49,8 +48,8 @@ export function InternetPartnersSection() {
               key={partner.name}
               className="flex flex-col items-center gap-6 bg-surface-white rounded-sm p-8 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="flex h-28 w-28 items-center justify-center p-2">
-                <img src={partner.logo} alt={`${partner.name} logo`} className="w-24 h-24 object-contain" />
+              <div className="flex h-36 w-36 items-center justify-center p-2">
+                <img src={partner.logo} alt={`${partner.name} logo`} className="w-36 h-36 object-contain" />
               </div>
               <span className="text-sm font-semibold text-midnight-ink">{partner.name}</span>
             </div>

@@ -5,12 +5,12 @@ import { SectionWrapper } from "@/components/layout/section-wrapper";
 
 const partners = [
   { name: "Cox", logo: "https://logo.uplead.com/cox.com" },
-  { name: "Optimum", logo: "https://logo.uplead.com/optimum.com" },
+  { name: "Optimum", logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/Optimum_Rebranded_New_logo.webp" },
   { name: "Spectrum", logo: "https://logo.uplead.com/charter.com" },
   { name: "Xfinity", logo: "https://logo.uplead.com/xfinity.com" },
   { name: "DIRECTV", logo: "https://logo.uplead.com/directv.com" },
   { name: "DISH", logo: "https://logo.uplead.com/dish.com" },
-  { name: "Verizon", logo: "https://logo.uplead.com/verizon.com" },
+  { name: "Verizon", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Verizon_2024.svg/3840px-Verizon_2024.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" },
 ];
 
 export function CableTVPartnersSection() {

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/layout/section-wrapper";
-import { Satellite, Globe, Tv, Wifi } from "lucide-react";
 
 const containerVariants = {
   hidden: {},
@@ -59,45 +58,42 @@ export function ProvidersSection() {
         {[
           {
             name: "AT&T",
-            icon: Globe,
-            description: "A leading telecommunications provider delivering reliable connectivity and competitive plans.",
-            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop",
+            description:
+              "A leading telecommunications provider delivering reliable connectivity and competitive plans.",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
           },
           {
-            name: "HughesNet",
-            icon: Satellite,
-            description: "Delivers high-speed satellite internet to customers in even the most remote locations.",
-            image: "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop",
+            name: "Verizon",
+            description:
+              "Nationwide wireless and fiber internet with dependable speeds and broad coverage for homes and businesses.",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Verizon_2024.svg/3840px-Verizon_2024.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
           },
           {
             name: "DIRECTV",
-            icon: Tv,
-            description: "Offers a broad selection of satellite TV channels, sports, and premium content.",
-            image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop",
+            description:
+              "Offers a broad selection of satellite TV channels, sports, and premium content.",
+            logo: "https://logo.uplead.com/directv.com",
           },
           {
             name: "Optimum",
-            icon: Wifi,
-            description: "A trusted internet provider delivering high-speed connectivity to homes at affordable rates.",
-            image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop",
+            description:
+              "A trusted internet provider delivering high-speed connectivity to homes at affordable rates.",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/Optimum_Rebranded_New_logo.webp",
           },
         ].map((provider) => {
-          const Icon = provider.icon;
           return (
             <motion.div
               key={provider.name}
               variants={cardVariants}
               className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col"
             >
-              <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-foreground/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
-                <img
-                  src={provider.image}
-                  alt={provider.name}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute bottom-4 left-4 z-20 bg-background/90 backdrop-blur-sm p-2 rounded-lg shadow-sm">
-                  <Icon className="h-6 w-6 text-primary" />
+              <div className="relative h-48 flex items-center justify-center bg-muted/40 px-6">
+                <div className="flex h-36 items-center justify-center p-2">
+                  <img
+                    src={provider.logo}
+                    alt={`${provider.name} logo`}
+                    className="w-36"
+                  />
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
