@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Wifi } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -13,6 +13,8 @@ const navLinks = [
   { href: "/internet", label: "Internet" },
   { href: "/cable-tv", label: "Cable TV" },
   { href: "/contact-us", label: "Contact Us" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/refund-policy", label: "Refund Policy" },
 ];
 
 export function Navbar() {
@@ -73,6 +75,7 @@ export function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-background p-0 border-l border-border/50">
+              <SheetTitle className="sr-only">Navigation menu</SheetTitle>
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-6 border-b border-border/50">
                   <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
