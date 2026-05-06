@@ -8,7 +8,7 @@ const contactCards = [
   {
     icon: Phone,
     title: "Call Us",
-    primary: "+01-123-456-7890",
+    primary: "888 208 1423",
     secondary: "Mon - Fri, 8:00 AM - 8:00 PM EST",
     description: "Speak directly with our team for immediate assistance with your internet or TV services.",
     accent: "bg-pale-mint",

@@ -38,9 +38,9 @@ export function ContactCTASection() {
               size="lg"
               className="bg-spring-leaf text-midnight-ink hover:bg-spring-leaf/90 rounded-full px-8 font-semibold"
             >
-              <Link href="tel:+011234567890">
+              <Link href="tel:+18882081423">
                 <Phone className="mr-2 h-4 w-4" />
-                Call +01-123-456-7890
+                Call 888 208 1423
               </Link>
             </Button>
           </motion.div>

@@ -22,7 +22,7 @@ const sections = [
     title: "2. Refund Process",
     content: [
       "To request a refund, please follow these steps:",
-      "**Step 1:** Contact our customer support team via contact info at our support portal or call +01-123-456-7890 with your account details and reason for the refund request.",
+      "**Step 1:** Contact our customer support team via contact info at our support portal or call 888 208 1423 with your account details and reason for the refund request.",
       "**Step 2:** Our team will review your request within 5 business days and may ask for additional documentation or information to process your claim.",
       "**Step 3:** If your refund is approved, we will notify you via contact info and process the refund to your original payment method.",
       "**Step 4:** The refund will appear on your account within 7-14 business days, depending on your financial institution.",
@@ -60,7 +60,7 @@ const sections = [
     content: [
       "You can request a refund through any of the following channels:",
       "**By contact info:** Send your refund request to our support portal with the subject line \"Refund Request — [Your Account Number]\". Include all relevant details about your account and the reason for the refund.",
-      "**By Phone:** Call our customer support team at +01-123-456-7890 during business hours (Monday-Friday, 8AM-8PM EST). Our representatives will guide you through the refund process.",
+      "**By Phone:** Call our customer support team at 888 208 1423 during business hours (Monday-Friday, 8AM-8PM EST). Our representatives will guide you through the refund process.",
       "For the fastest processing, we recommend contacting us via contact info or phone.",
     ],
   },
@@ -89,7 +89,7 @@ const sections = [
     content: [
       "For any questions or concerns about our refund policy, please don't hesitate to reach out:",
       "**FlexiNet Customer Support**",
-      "**contact info:** our support portal\n**Phone:** +01-123-456-7890\n**Business Hours:** Monday-Friday, 8AM-8PM EST",
+      "**contact info:** our support portal\n**Phone:** 888 208 1423\n**Business Hours:** Monday-Friday, 8AM-8PM EST",
       "Our team is dedicated to helping you resolve any billing or refund concerns promptly and professionally.",
     ],
   },

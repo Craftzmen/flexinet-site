@@ -65,7 +65,7 @@ const sections = [
       "• **Deletion:** You can request that we delete your personal information, subject to certain legal obligations.",
       "• **Opt-Out:** You can opt out of marketing communications at any time by clicking the unsubscribe link in our contact infos or contacting us directly.",
       "• **Data Portability:** You can request a machine-readable copy of your personal data.",
-      "To exercise any of these rights, please contact us at our support portal or call +01-123-456-7890.",
+      "To exercise any of these rights, please contact us at our support portal or call 888 208 1423.",
     ],
   },
   {
@@ -102,7 +102,7 @@ const sections = [
     content: [
       "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:",
       "**FlexiNet**",
-      "**contact info:** our support portal\n**Phone:** +01-123-456-7890",
+      "**contact info:** our support portal\n**Phone:** 888 208 1423",
       "We will respond to your inquiry within 30 business days.",
     ],
   },
